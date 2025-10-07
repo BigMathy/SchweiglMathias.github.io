@@ -1,0 +1,429 @@
+
+.title {
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+}
+
+.sub-title {
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 200;
+    color: #AFC8D4;
+    margin-top: 0.5rem;
+}
+
+.title, .sub-title {
+    text-align: center;
+}
+
+/* Bento Box*/
+
+.bento-grid {
+
+    justify-content: center;
+
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: 350px 350px 340px 370px;
+    grid-template-rows: 360px 230px 260px 350px 700px;
+    gap: 20px;
+
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-2"
+    "box-3 box-3 box-4 box-5"
+    "box-6 box-6 box-6 box-5"
+    "box-6 box-6 box-6 box-7"
+    "box-8 box-8 box-8 box-8";
+}
+
+.box {
+    background-color: #19191E;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.30s, box-shadow 0.15s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 2px rgba(31, 97, 210, 1);
+}
+
+.box h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    margin: 0rem;
+}
+
+.box h3 {
+    font-size: 18px;
+    font-weight: 200;
+    color: #AFC8D4;
+    margin: 0rem;
+}
+
+/* Box 1 */
+
+.box1 {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.box1 h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.box1 h3 {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+/* Box 2 */
+
+.box2 {
+    padding-left: 2rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    line-height: 25px;
+    gap: 1rem;
+}
+
+.box2-location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.box2-status {
+    display: flex;
+    align-items: center;
+}
+
+.box2-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #1F61D2;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 2.1rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 6px 2px #1F61D2;
+}
+
+/* Box 3 */
+
+.box3 {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.box3 .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Box 4 */
+
+.box4 {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+/* Box 5 */
+
+.box5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.box5-gradient {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 46%, rgba(25,25,40,0.7) 70%, rgba(25,25,30,0.9) 100%);
+    border-radius: 25px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box5 img {
+  height: auto;
+  position: absolute;
+  left: 2rem; 
+  top: 1rem;        
+  z-index: 1;
+  border-radius: 16px; 
+}
+
+.box5 img {
+    transition: transform 0.6s;
+}
+
+.box5:hover img {
+    transform: scale(0.8) rotate(16deg);
+}
+
+.box5 h1, .box5 h3 {
+    position: relative;
+    z-index: 2;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.box:hover .box5 h1 {
+    color: #1F61D2;
+}
+
+/* Box 6 */
+
+.box6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.box6-gradient {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 46%, rgba(25,25,40,0.7) 70%, rgba(25,25,30,0.9) 100%);
+    border-radius: 25px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box6 img {
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    border-radius: 25px;
+}
+
+.box6:hover img {
+    transform: scale(0.95);
+}
+
+.box6 h1, .box6 h3 {
+    position: relative;
+    z-index: 2;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.box:hover .box6 h1{
+  color: #1F61D2;
+  transition: color 0.2s;
+}
+
+/* Box 7 */
+
+.box7 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
+/* Box 8 */
+
+.box8 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.box8-gradient {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 46%, rgba(25,25,40,0.7) 70%, rgba(25,25,30,0.9) 100%);
+    border-radius: 25px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box8 img {
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.box8:hover img {
+    transform: scale(0.95);
+}
+
+.box8 h1, .box8 h3 {
+    position: relative;
+    z-index: 2;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.box:hover .box8 h1{
+  color: #1F61D2;
+  transition: color 0.2s;
+}
+
+@media (max-width: 1200px) {
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "box-1 box-2"
+            "box-3 box-4"
+            "box-5 box-6"
+            "box-7 box-8";
+        gap: 16px;
+    }
+    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+        padding: 1rem !important;
+        border-radius: 16px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .sub-title {
+        font-size: 18px;
+    }
+    .box h1, .box1 h1 {
+        font-size: 20px;
+    }
+    .box h3, .box1 h3 {
+        font-size: 15px;
+    }
+    .box img,
+    .box5 img,
+    .box6 img,
+    .box8 img {
+        width: 100%;
+        height: auto;
+        max-width: 220px;
+        max-height: 160px;
+        left: 0;
+        top: 0;
+        border-radius: 12px;
+        position: relative;
+    }
+}
+
+@media (max-width: 800px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "box-1"
+            "box-2"
+            "box-3"
+            "box-4"
+            "box-5"
+            "box-6"
+            "box-7"
+            "box-8";
+        gap: 12px;
+    }
+    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+        padding: 1rem !important;
+        border-radius: 16px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .sub-title {
+        font-size: 14px;
+    }
+    .box h1, .box1 h1 {
+        font-size: 16px;
+    }
+    .box h3, .box1 h3 {
+        font-size: 11px;
+    }
+    .box img,
+    .box5 img,
+    .box6 img,
+    .box8 img {
+        width: 100%;
+        height: auto;
+        max-width: 220px;
+        max-height: 160px;
+        left: 0;
+        top: 0;
+        border-radius: 12px;
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 14px;
+    }
+    .sub-title {
+        font-size: 10px;
+    }
+    .box h1, .box1 h1 {
+        font-size: 12px;
+    }
+    .box h3, .box1 h3 {
+        font-size: 8px;
+    }
+    .box img,
+    .box5 img,
+    .box6 img,
+    .box8 img {
+        max-width: 120px;
+        max-height: 90px;
+    }
+}
+
