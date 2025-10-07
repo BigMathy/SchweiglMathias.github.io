@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/Schneggiessen.css"
 
 import FoodRating from "../img/SchneggiEssen/FoodRating.png"
-import FoodRatingMain from "../img/SchneggiEssen/FoodratingMain.png"
+import FoodRatingMain from "../img/SchneggiEssen/FoodRatingMain.png"
 
 export default function SchneggiEssen() {
     const navigate = useNavigate();
