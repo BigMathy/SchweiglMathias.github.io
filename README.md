@@ -10,5 +10,5 @@ Feel free to explore, get inspired, or reach out if you’d like to collaborate!
 ---
 
 🖥️ **Live Website:** [https://bigmathy.github.io/SchweiglMathias.github.io/](https://bigmathy.github.io/SchweiglMathias.github.io/)  
-📧 **Contact:** *(add your email or contact link here)*  
+📧 **Contact:** *schweiglmathias@gmail.com*  
 
