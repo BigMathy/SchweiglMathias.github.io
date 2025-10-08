@@ -87,7 +87,7 @@ function BentoBox() {
                 <div className="box" style={{ gridArea: 'box-7' }}>
                     <div className="box7">
                         <h1>More Work</h1>
-                        <h3>Comming soon...</h3>
+                        <h3>Coming soon...</h3>
                     </div>
                 </div>
                 <div className="box" 
