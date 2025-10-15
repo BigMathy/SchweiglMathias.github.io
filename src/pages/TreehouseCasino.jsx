@@ -28,7 +28,7 @@ export default function TreehouseCasino() {
                             <img
                                 src={TreehouseCasinoLogin}
                                 alt="TreehouseCasinoLogin"
-                                style={{ width: "750px", height: "auto", borderRadius: "25px" }}
+                                style={{ width: "100%", height: "auto", borderRadius: "25px" }}
                             />
                         </div>
                         <div className="treehouse-main-text-container">
@@ -67,7 +67,7 @@ export default function TreehouseCasino() {
                             <img
                                 src={TreehouseMain}
                                 alt="TreehouseProfile"
-                                style={{ width: "750px", height: "auto", borderRadius: "25px" }}
+                                style={{ width: "100%", height: "auto", borderRadius: "25px" }}
                             />
                         </div>
                     </div>
@@ -93,7 +93,7 @@ export default function TreehouseCasino() {
                             <img
                                 src={TreehousePlanted}
                                 alt="TreehousePlanted"
-                                style={{ width: "750px", height: "auto", borderRadius: "25px" }}
+                                style={{ width: "100%", height: "auto", borderRadius: "25px" }}
                             />
                         </div>
                     </div>
