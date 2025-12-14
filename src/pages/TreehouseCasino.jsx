@@ -1,9 +1,11 @@
-
+// Importing necessary libraries and components
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
+// Importing CSS
 import "../css/TreehouseCasino.css"
 
+// Importing images
 import TreehouseCasinoLogin from "../img/Treehouse/TreehouseCasinoLogin.png";
 import TreehouseMain from "../img/Treehouse/TreehouseMain.png";
 import TreehouseProfile from "../img/Treehouse/TreehouseProfile.png";
@@ -14,14 +16,18 @@ export default function TreehouseCasino() {
     return (
         <>
             <div className="treehouse">
+                {/*Back arrow to navigate to portfolio page*/}
                 <FaArrowLeftLong
                     className="back-arrow"
                     onClick={() => navigate("/portfolio")}
                     style={{ cursor: "pointer" }}
                 />
+
+                {/*Title Section*/}
                 <h1>Online Casino</h1>
                 <h3>Small School Project</h3>
 
+                {/*Main content of the Treehouse Casino page*/}
                 <div className="treehouse">
                     <div className="treehouse-main">
                         <div className="treehouse-img-container">
@@ -52,6 +58,7 @@ export default function TreehouseCasino() {
                             </h3>
                         </div>
                     </div>
+                    {/*Sub content of the Treehouse Casino page*/}
                     <div className="treehouse-sub-text-container">
                         <div className="treehouse-info">
                             <h1>Design & Aesthetics</h1>
@@ -71,6 +78,7 @@ export default function TreehouseCasino() {
                             />
                         </div>
                     </div>
+                    {/*Last content of the Treehouse Casino page*/}
                     <div className="treehouse-last-text-container">
                         <div className="treehouse-info">
                             <h1>User Experience</h1>

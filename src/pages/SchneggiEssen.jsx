@@ -1,9 +1,11 @@
-
+// Importing necessary libraries and components
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
+// Importing CSS
 import "../css/Schneggiessen.css"
 
+// Importing images
 import FoodRating from "../img/SchneggiEssen/FoodRating.png"
 import FoodRatingMain from "../img/SchneggiEssen/FoodRatingMain.png"
 
@@ -11,15 +13,19 @@ export default function SchneggiEssen() {
     const navigate = useNavigate();
     return (
         <>
+            {/*Food Rating Page*/}
             <div className="foodRating">
+                {/*Back arrow to navigate to portfolio page*/}
                 <FaArrowLeftLong
                     className="back-arrow"
                     onClick={() => navigate("/portfolio")}
                     style={{ cursor: "pointer" }}
                 />
+                {/*Title Section*/}
                 <h1>Food Ratin</h1>
                 <h3>Website to rate food in Innsbruck</h3>
 
+                {/*Main content of the Food Rating page*/}
                 <div className="foodRating-main">
                     <div className="foodRating-img-container">
                         <img
@@ -49,6 +55,7 @@ export default function SchneggiEssen() {
                     </div>
                 </div>
 
+                {/*Sub content of the Food Rating page*/}
                 <div className="foodRating-sub-text-container">
                     <div className="foodRating-sub-text">
                         <h1>Features</h1>

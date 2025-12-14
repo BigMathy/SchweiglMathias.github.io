@@ -2,17 +2,17 @@
   line-height: 25px;
 }
 
-h1 {
+.treehouse h1 {
   font-size: 38px;
   margin-bottom: 10px;
-  color: white;
+  color: var(--color-text);
 }
 
-h3 {
+.treehouse h3 {
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 200;
-  color: #AFC8D4;
+  color: var(--color-text-secondary);
 }
 
 .treehouse-main {
@@ -25,10 +25,10 @@ h3 {
 }
 
 .treehouse-img-container {
-    background-color: #19191E;
+    background-color: var(color-bento);
     border-radius: 25px;
     padding: 1rem;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid var(--color-bento-border);
 }
 
 .treehouse-img-container:hover {
@@ -43,10 +43,10 @@ h3 {
 }
 
 .treehouse-info-img-container {
-    background-color: #19191E;
+    background-color: var(--color-bento);
     border-radius: 25px;
     padding: 1rem;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid var(--color-bento-border);
 }
 
 .treehouse-info-img-container:hover {
@@ -64,8 +64,8 @@ h3 {
 .treehouse-img-container-two {
   position: relative;
   align-items: center;
-  background-color: #19191E;
-  border: 2px solid rgba(255,255,255,0.3);
+  background-color: var(--color-bento);
+  border: 2px solid var(--color-bento-border);
   border-radius: 25px;
   padding: 1rem;
 }

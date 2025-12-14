@@ -1,7 +1,7 @@
 .skills {
-    background-color: #26262D;
+    background-color: var(--color-skills-bg);
     border-radius: 25px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--color-bento-border);
     padding: 0.5rem 2rem;
     gap: 2  rem;
     width: fit-content;
@@ -10,7 +10,7 @@
 .skills h1 {
     font-size: 18px;
     font-weight: 200;
-    color: #AFC8D4;
+    color: var(--color-text-secondary);
 }
 
 .skills:hover {

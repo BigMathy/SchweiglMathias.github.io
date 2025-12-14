@@ -1,10 +1,31 @@
 :root {
   font-family: 'Inter', sans-serif;
   letter-spacing: 2%;
+
+  /* light mode colors */
+  --color-bg: #f0f0f5;
+  --color-text: #111111;
+  --color-text-secondary: #2b4450;
+  --color-bento: #e0e0e5;
+  --color-bento-border: rgba(0, 0, 0, 0.1);
+  --color-bento-linear: linear-gradient(180deg, rgba(255,255,255,0.3) 46%, rgba(230,230,225,0.7) 70%, rgba(230,230,225,0.9) 100%);
+  --color-navbar-bg: rgba(255, 255, 255, 0.80);
+  --color-skills-bg: #d3d3d9;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0A0A0F;
+  --color-text: #f8fafc;
+  --color-text-secondary: #AFC8D4;
+  --color-bento: #19191E;
+  --color-bento-border: rgba(255, 255, 255, 0.1);
+  --color-bento-linear: linear-gradient(180deg, rgba(0,0,0,0.3) 46%, rgba(25,25,40,0.7) 70%, rgba(25,25,30,0.9) 100%);
+  --color-navbar-bg: rgba(10, 10, 15, 0.80);
+  --color-skills-bg: #26262D;
 }
 
 body {
-  background-color: #0A0A0F;
+  background-color: var(--color-bg);
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -14,5 +35,5 @@ body {
 }
 
 .highlight-white {
-    color: white;
+    color: var(--color-text);
 }

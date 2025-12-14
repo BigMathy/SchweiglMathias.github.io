@@ -10,13 +10,26 @@
     gap: 2rem;
 }
 
+.foodRating h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.foodRating h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: var(--color-text-secondary);
+}
+
 .foodRating-img-container {
     max-width: 850px;
     min-width: 750px;
-    background-color: #19191E;
+    background-color: var(--color-bento);
     border-radius: 25px;
     padding: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--color-bento-border);
 }
 
 .foodRating-img-container:hover {
@@ -32,8 +45,8 @@
 .foodRating-img-container-two {
     max-width: 850px;
     min-width: 750px;
-    background-color: #19191E;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--color-bento);
+    border: 2px solid var(--color-bento-border);
     border-radius: 25px;
     padding: 1rem;
 }

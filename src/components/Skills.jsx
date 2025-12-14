@@ -1,3 +1,4 @@
+// Import CSS
 import "../css/Skills.css";
 
 function Skills(props) {
